@@ -1,0 +1,94 @@
+
+body{
+	color: #FFFFFF;
+	background-color: #7dc2ad;
+	font-family: 'Oswald', sans-serif;
+}
+
+/** Header **/
+#header-nav{
+	border-radius: 0;
+	border: 0;
+	background-color: #E8A87C;
+}
+.navbar-header{
+	height: 100px;
+	background-color: #E8A87C;
+}
+.navbar-brand{
+	padding-top: 0;
+}
+.navbar-brand h1{
+	color: #FFFFFF;
+	font-size: 3em;
+	font-style: bold;
+	text-shadow: 3px 3px 3px #169898;
+	font-weight: 700;
+	padding: 15px 0 15px 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+/** Header End **/
+
+/** Collapsable Nav **/
+#collapsable-nav{
+	border: 0;
+	margin: 0 -15px 0 -15px;
+	padding: 0;
+}
+#nav-list{
+	margin: 0;
+}
+#nav-list a{
+	background-color: #e29a84;
+	font-size: 1.25em;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #169898;
+}
+#nav-list a:hover, #nav-list a:focus{
+	background-color: #E8A87C;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 2px solid #40b3a2;
+	color: #40b3a2;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+	margin-top: -30px;
+}
+#button-content{
+	border-bottom: 2px solid #7f5c44;
+}
+
+/** Collapsable Nav End **/
+
+/** Main Content **/
+#menu-header{
+	font-size: 2.5em;
+	font-weight: 500;
+	text-shadow: 3px 3px 3px #169898;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+#main-content{
+	margin-bottom: 50px;
+}
+
+#menu-items{
+	background-color: #40b3a2;
+	border-bottom: 4px solid #205a51;
+	border-right: 4px solid #205a51;
+}
+#menu-items h3{
+	text-shadow: 2px 2px 2px #169898;
+	margin-bottom: 25px;
+}
+#menu-items p{
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
