@@ -12,7 +12,9 @@
 
         $scope.submitResponse = function () {
             
-            var condition = checkEmptyString($scope.submittedItems);
+            var noSpaceItems = removeSpaces($scope.submittedItems);
+
+            var condition = checkEmptyString(noSpaceItems);
             
             if (!condition) {
                 //Split answer into array
@@ -28,6 +30,11 @@
 
         // Functionality //
         //---------------//
+
+        function removeSpaces(str) {
+            var newStr = str.replace(/\s+/g, '');
+            return newStr;
+        }
 
         function checkEmptyString (str) {
             if (str === "") {
