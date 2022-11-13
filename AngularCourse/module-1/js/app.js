@@ -18,7 +18,7 @@
             
             if (!condition) {
                 //Split answer into array
-                var items = createArray($scope.submittedItems);
+                var items = createArray(noSpaceItems);
 
                 var amount = calculateAmountOfItems(items);
 
