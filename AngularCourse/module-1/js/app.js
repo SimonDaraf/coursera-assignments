@@ -13,7 +13,6 @@
         $scope.submitResponse = function () {
             
             var noSpaceItems = removeSpaces($scope.submittedItems);
-            console.log("items: " + noSpaceItems);
 
             var condition = checkEmptyString(noSpaceItems);
             
