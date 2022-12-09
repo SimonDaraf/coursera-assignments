@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="MenuApp">
+  <head>
+    <title>Module 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    
+  </head>
+<body>
+
+  <h1>Resturant</h1>
+
+  <ui-view></ui-view>
+
+  <script src="js/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.min.js" integrity="sha512-HdDqpFK+5KwK5gZTuViiNt6aw/dBc3d0pUArax73z0fYN8UXiSozGNTo3MFx4pwbBPldf5gaMUq/EqposBQyWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Modules -->
+  <script src="js/MenuApp/data.module.js"></script>
+  <script src="js/MenuApp/menuapp.module.js"></script>
+
+  <!-- Components -->
+  <script src="js/MenuApp/menudata.service.js"></script>
+  <script src="js/MenuApp/categories.component.js"></script>
+  <script src="js/MenuApp/categories.controller.js"></script>
+  <script src="js/MenuApp/items.component.js"></script>
+  <script src="js/MenuApp/items.controller.js"></script>
+  <script src="js/routes.js"></script>
+
+</body>
+</html>
