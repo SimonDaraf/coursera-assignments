@@ -1,0 +1,12 @@
+<div class="row text-center">
+    <legend id="whiteColor">{{ infoCtrl.user.name }}</legend>
+    <div> 
+        {{ infoCtrl.user.email }} <br>
+        {{ infoCtrl.user.phone }} <br>
+        {{ infoCtrl.user.item }}
+    </div>
+    <div ng-if="!infoCtrl.hasRegistered">
+        <div>Please register</div>
+        <button id="button-reg" ui-sref="public.register">Register</button>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="row text-center">
+    <legend id="whiteColor">Sign Up to Newsletter</legend>
+    <form name="regForm" novalidate>
+
+        <input id="input-register" type="text" name="firstName" placeholder="First Name"
+            ng-model="reg.user.firstName"
+            required>
+            <span>*</span>
+            <span ng-if="regForm.firstName.$error.required && regForm.firstName.$touched">
+                First name required.
+            </span>
+            <br>
+        
+        <input id="input-register" type="text" name="lastName" placeholder="Last Name"
+            ng-model="reg.user.lastName"
+            required>
+            <span>*</span>
+            <span ng-if="regForm.lastName.$error.required && regForm.lastName.$touched">
+                Last name required.
+            </span>
+            <br>
+        
+        <input id="input-register" type="email" name="email" placeholder="Email"
+            ng-model="reg.user.email"
+            required>
+            <span>*</span>
+            <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+                Email adress must follow: handle@domain format.
+            </span>
+            <br>
+        
+        <input id="input-register" type="text" name="phone" placeholder="Phone ###-###-####"
+            ng-model="reg.user.phone"
+            pattern="(\d{3})-(\d{3})-(\d{4})">
+            <span>*</span>
+            <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
+                Phone must follow: ###-###-#### format.
+            </span>
+            <br><br>
+
+        <div>Please select your favourite item from the menu</div>
+        <input id="input-register" type="text" name="category" placeholder="Menu Category"
+            ng-model="reg.user.category">
+        <input id="input-register" type="text" name="itemNumber" placeholder="Item Number"
+            ng-model="reg.user.itemNumber">
+        <br><br>
+
+        <button id="button-reg"
+            ng-disabled="regForm.$invalid"
+            ng-click="reg.submit()"
+            ui-sref="public.complete">Submit</button>
+
+    </form>
+</div>
